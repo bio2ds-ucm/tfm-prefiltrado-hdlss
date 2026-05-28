@@ -25,7 +25,7 @@ cargar_datos <- function(semilla, archivo) {
 
 
 summary_all <- bind_rows(lapply(SEMILLAS_SPLIT, function(sem)
-  cargar_datos(sem, "elastic_net_results_FUSIONADO.rds")))
+  cargar_datos(sem, "elastic_net_results_FINAL.rds")))
 
 
 coefs_all <- bind_rows(lapply(SEMILLAS_SPLIT, function(sem)
