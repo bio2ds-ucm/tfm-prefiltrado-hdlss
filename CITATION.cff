@@ -8,6 +8,10 @@ authors:
     given-names: "Cristina"
   - family-names: "Contró"
     given-names: "Pedro"
+  - family-names: "Calviño"
+    given-names: "Aida"
+  - family-names: "Pineda"
+    given-names: "Silvia"
 license: MIT
 repository-code: "https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss"
 url: "https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss"
