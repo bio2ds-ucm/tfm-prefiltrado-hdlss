@@ -78,6 +78,19 @@ Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
 - Con **muestra reducida** (n = 100), ninguna configuración alcanza el rendimiento del baseline. El prefiltrado no compensa la pérdida de tamaño muestral.
 - Las técnicas de **aumento de datos** evaluadas (SMOTE, Bootstrap, Ruido) producen AUCs en torno a 0.60–0.61, sin mejorar de forma clara el escenario de submuestra.
 
+## 📑 Citación
+
+@software{ordaz2026code,
+  author    = {Ordaz, Cristina},
+  title     = {Code for: Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {[Zenodo DOI]},
+  url       = {https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss}
+}
+
+See [`CITATION.cff`](CITATION.cff).
+
 ## 📄 License
 
 This code is released under the [MIT License](LICENSE).
