@@ -3,18 +3,21 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/status-in%20preparation-orange.svg)
 
-Trabajo Fin de Máster — Máster en Bioestadística, Facultad de Estudios Estadísticos, Universidad Complutense de Madrid.
+Trabajo Fin de Máster — Máster en Bioestadística  
+Facultad de Estudios Estadísticos · Universidad Complutense de Madrid
 
-**Autoras:** Cristina Ordaz 
-**Tutoras:** Aida Calviño, Pedro Contró y Silvia Pineda
+|  |  |
+|---|---|
+| 🎓 **Autoras** | Cristina Ordaz |
+| 🧭 **Tutoras** | Pedro Contró, Aida Calviño, Silvia Pineda |
 
-## Descripción
+## 📌 Descripción
 
 Este repositorio contiene el código y los resultados de un estudio sobre técnicas de prefiltrado de variables (p-valor, MRMR, CMIM) y aumento de datos (SMOTE, Bootstrap, Ruido) aplicadas a datos transcriptómicos de expresión génica de tumores primarios de mama (cohorte SCAN-B), en un escenario HDLSS (*High Dimension, Low Sample Size*) donde p ≫ n. La variable respuesta indica si el tumor es de subtipo Luminal A (1) o no (0).
 
 El modelo base es una regresión logística con regularización Lasso (L1).
 
-## Procedimientos evaluados
+## ⚙️ Procedimientos evaluados
 
 Siguiendo el diagrama de repeticiones del estudio:
 
@@ -31,7 +34,7 @@ Siguiendo el diagrama de repeticiones del estudio:
 - Procedimientos **A y B**: 5 repeticiones (una por semilla, train completo).
 - Procedimientos **C, D, F, G, H**: 100 repeticiones (5 semillas × 20 submuestras de n = 100).
 
-## Estructura del repositorio
+## 📁 Estructura del repositorio
 
 ```
 .
@@ -44,11 +47,11 @@ Siguiendo el diagrama de repeticiones del estudio:
 └── doc/                   Póster en PDF
 ```
 
-## Datos
+## 🧬 Datos
 
 Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públicamente en el repositorio GEO (identificador **GSE202203**). Por su tamaño (~340 MB), el archivo `.rds` procesado **no se incluye** en este repositorio. En `data/README.md` se explica cómo obtenerlo y con qué nombre colocarlo para que los scripts lo encuentren.
 
-## Cómo reproducir los resultados
+## ▶️ Cómo reproducir los resultados
 
 ### Requisitos
 
@@ -66,7 +69,7 @@ Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públ
 
 Los 5 scripts de `scripts/ejecuciones/` son prácticamente idénticos y solo difieren en la semilla utilizada. Se han mantenido como archivos separados para facilitar la trazabilidad de cada ejecución. Si se modifica algo en uno, conviene replicar el cambio en los otros cuatro.
 
-## Resultados principales
+## 📊 Resultados principales
 
 Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
 
@@ -75,7 +78,11 @@ Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
 - Con **muestra reducida** (n = 100), ninguna configuración alcanza el rendimiento del baseline. El prefiltrado no compensa la pérdida de tamaño muestral.
 - Las técnicas de **aumento de datos** evaluadas (SMOTE, Bootstrap, Ruido) producen AUCs en torno a 0.60–0.61, sin mejorar de forma clara el escenario de submuestra.
 
-## Contacto
+## 📄 License
+
+This code is released under the [MIT License](LICENSE).
+
+## 📬 Contacto
 
 cordaz@ucm.es — Facultad de Estudios Estadísticos, UCM.
 pcontro@ucm.es - Facultad de Estudios Estadísticos, UCM.
