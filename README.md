@@ -27,12 +27,13 @@ Siguiendo el diagrama de repeticiones del estudio:
 | B | Train completo + prefiltrado de variables |
 | C | Submuestra (n = 100), sin prefiltrado |
 | D | Submuestra (n = 100) + prefiltrado |
+| E | Submuestra + aumento con datos reales |
 | F | Submuestra + aumento con SMOTE |
 | G | Submuestra + aumento con Bootstrap |
 | H | Submuestra + aumento con Ruido |
 
 - Procedimientos **A y B**: 5 repeticiones (una por semilla, train completo).
-- Procedimientos **C, D, F, G, H**: 100 repeticiones (5 semillas × 20 submuestras de n = 100).
+- Procedimientos **C, D, E, F, G, H**: 100 repeticiones (5 semillas × 20 submuestras de n = 100).
 
 ## 📁 Estructura del repositorio
 
