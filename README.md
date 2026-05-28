@@ -8,8 +8,8 @@ Facultad de Estudios Estadísticos · Universidad Complutense de Madrid
 
 |  |  |
 |---|---|
-| 🎓 **Autoras** | Cristina Ordaz |
-| 🧭 **Tutoras** | Pedro Contró, Aida Calviño, Silvia Pineda |
+| 🎓 **Autora** | Cristina Ordaz |
+| 🧭 **Tutores** | Pedro Contró, Aida Calviño, Silvia Pineda |
 
 ## 📌 Descripción
 
@@ -38,25 +38,25 @@ Siguiendo el diagrama de repeticiones del estudio:
 
 ```
 .
-├── data/                  Instrucciones para obtener los datos (los .rds NO se versionan)
+├── data/                  Un .rds con los datos
 ├── scripts/
 │   ├── ejecuciones/       5 scripts, uno por semilla
-│   └── graficos/          Scripts que generan las figuras del póster
+│   └── graficos/          Scripts que generan las figuras
 ├── resultados/            Se rellena al ejecutar los scripts (los .rds NO se versionan)
 ├── figuras/               Figuras finales (PNG)
-└── doc/                   Póster en PDF
+└── doc/                   Póster en PDF y TFM en PDF
 ```
 
 ## 🧬 Datos
 
-Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públicamente en el repositorio GEO (identificador **GSE202203**). Por su tamaño (~340 MB), el archivo `.rds` procesado **no se incluye** en este repositorio. En `data/README.md` se explica cómo obtenerlo y con qué nombre colocarlo para que los scripts lo encuentren.
+Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públicamente en el repositorio GEO (identificador **GSE202203**). El archivo `.rds` (tamaño ~340 MB) procesado se incluye en este repositorio. 
 
 ## ▶️ Cómo reproducir los resultados
 
 ### Requisitos
 
-- R (versión utilizada: **completar con la versión de R con la que se ejecutó**).
-- Paquetes principales: `glmnet`, `praznik` (filtros MRMR y CMIM), `smotefamily` o `themis` (SMOTE), `dplyr`, `ggplot2`, `tidyr`.
+- R (versión utilizada: 4.5.2.
+- Paquetes principales: `glmnet`, `praznik`, `smotefamily`, `dplyr`, `ggplot2`, `tidyr`, `caret`, `pROC`, `doParallel`, `foreach`, `mRMRe`.
 
 
 ### Pasos
@@ -71,12 +71,13 @@ Los 5 scripts de `scripts/ejecuciones/` son prácticamente idénticos y solo dif
 
 ## 📊 Resultados principales
 
-Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
+Resumen de lo observado en el estudio:
 
-- En **train completo**, el prefiltrado (Procedimiento B) alcanza un rendimiento equiparable al baseline (A) cuando se retienen ≥ 1000 variables. CMIM es el filtro más eficaz; el p-valor el más débil con pocas variables.
-- El **solapamiento entre filtros es muy bajo**: con 50 variables ninguna es compartida por los tres métodos; con 1000, solo 89 lo son.
-- Con **muestra reducida** (n = 100), ninguna configuración alcanza el rendimiento del baseline. El prefiltrado no compensa la pérdida de tamaño muestral.
-- Las técnicas de **aumento de datos** evaluadas (SMOTE, Bootstrap, Ruido) producen AUCs en torno a 0.60–0.61, sin mejorar de forma clara el escenario de submuestra.
+- **p-valor** y **MRMR** son los filtros más sólidos. El p-valor rinde de forma consistente y se adapta mejor a la escasez de observaciones; MRMR es la alternativa multivariante más estable. La elección depende del objetivo.
+- **CMIM** es el mejor con muestra grande pero frágil con muestra reducida, y su combinación con SMOTE se descarta. La **selección aleatoria** queda descartada por rendir siempre peor.
+- La **selección de variables** es muy inestable y los filtros son complementarios. Pocas variables consistentes con n=100 y cada filtro favorece variables distintas.
+- Las **observaciones reales** (E) dan las mayores ganancias; cuando no son viables, **SMOTE** es la mejor opción sintética, sobre todo con p-valor o MRMR. Bootstrap y ruido fueron descartados.
+- **Como recomendación**, prefiltrar con p-valor o MRMR junto con datos reales; si no es posible, SMOTE con cualquiera de ellos. Evitar CMIM × SMOTE.
 
 ## 📑 Citación
 
