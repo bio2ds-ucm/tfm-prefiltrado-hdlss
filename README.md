@@ -39,7 +39,7 @@ Siguiendo el diagrama de repeticiones del estudio:
 
 ```
 .
-├── data/                  Un .rds con los datos
+├── data/                  Instrucciones para descargar el dataset
 ├── scripts/
 │   ├── ejecuciones/       5 scripts, uno por semilla
 │   └── graficos/          Scripts que generan las figuras
@@ -50,7 +50,7 @@ Siguiendo el diagrama de repeticiones del estudio:
 
 ## 🧬 Datos
 
-Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públicamente en el repositorio GEO (identificador **GSE202203**). El archivo `.rds` (tamaño ~340 MB) procesado se incluye en este repositorio. 
+Los datos provienen de la cohorte SCAN-B (Dalal et al., 2022), disponibles públicamente en el repositorio GEO (identificador **GSE202203**). Debido al tamaño del archivo `.rds` (~340 MB) procesado se incluye en este repositorio las instrucciones para acceder al dataset en la carpeta `data/`. 
 
 ## ▶️ Cómo reproducir los resultados
 
