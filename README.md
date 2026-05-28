@@ -1,9 +1,9 @@
 # Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad
 
-Trabajo Fin de Máster — Máster en Bioestadística, Universidad Complutense de Madrid.
+Trabajo Fin de Máster — Máster en Bioestadística, Facultad de Estudios Estadísticos, Universidad Complutense de Madrid.
 
-**Autores:** Cristina Ordaz, Pedro Contró
-**Tutoras:** Aida Calviño, Silvia Pineda
+**Autoras:** Cristina Ordaz 
+**Tutoras:** Aida Calviño, Pedro Contró y Silvia Pineda
 
 ## Descripción
 
@@ -72,35 +72,9 @@ Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
 - Con **muestra reducida** (n = 100), ninguna configuración alcanza el rendimiento del baseline. El prefiltrado no compensa la pérdida de tamaño muestral.
 - Las técnicas de **aumento de datos** evaluadas (SMOTE, Bootstrap, Ruido) producen AUCs en torno a 0.60–0.61, sin mejorar de forma clara el escenario de submuestra.
 
-## Bibliografía
-
-1. Fernández-Casal R, Costa J, Oviedo M. *Métodos predictivos de aprendizaje estadístico*. Servizo de Publicacións, Universidade da Coruña; 2024. <https://rubenfcasal.github.io/aprendizaje_estadistico/>
-2. Bühlmann P, Van de Geer S. *Statistics for high-dimensional data: methods, theory and applications*. Springer Series in Statistics. Berlin, Heidelberg: Springer Berlin Heidelberg; 2011.
-3. Giraud C. *Introduction to high-dimensional statistics*. 2nd ed. Chapman & Hall/CRC Monographs on Statistics and Applied Probability. Chapman and Hall/CRC; 2021.
-4. Fernández-Tortolero Á, Reigosa-Yániz A. Subtipos del carcinoma luminal de mama según el consenso de Saint Gallen en un grupo de pacientes venezolanas. *Biomédica*. 2021;41(3):531-40.
-5. Gaona-Romero C, Domínguez-Recio ME, Comino-Méndez I, Ortega-Jiménez MV, Lavado-Valenzuela R, Alba E. Luminal and basal subtypes across carcinomas: molecular programs beyond tissue of origin. *Cancers*. 2025;17(16):2720.
-6. Chawla NV, Bowyer KW, Hall LO, Kegelmeyer WP. SMOTE: synthetic minority over-sampling technique. *Journal of Artificial Intelligence Research*. 2002;16:321-57.
-7. Calviño Martínez A, Alonso Revenga JM. *Introducción a la ciencia de datos con R*. García Maroto Editores; 2025.
-8. Peduzzi P, Concato J, Kemper E, Holford TR, Feinstein AR. A simulation study of the number of events per variable in logistic regression analysis. *Journal of Clinical Epidemiology*. 1996;49(12):1373-9.
-9. Sur P, Candès EJ. A modern maximum-likelihood theory for high-dimensional logistic regression. *Proceedings of the National Academy of Sciences of the United States of America*. 2019;116(29):14516-25.
-10. Albert A, Anderson JA. On the existence of maximum likelihood estimates in logistic regression models. *Biometrika*. 1984;71(1):1-10.
-11. Lacan A. *Transcriptomics data generation with deep generative models* [Thèse de doctorat]. Université Paris-Saclay; 2025. <https://theses.hal.science/tel-04996930>
-12. García-Vicente C, Chushig-Muzo D, Mora-Jiménez I, Fabelo H, Gram IT, Løchen ML, et al. Evaluation of synthetic categorical data generation techniques for predicting cardiovascular diseases and post-hoc interpretability of the risk factors. *Applied Sciences*. 2023;13(7):4119.
-13. Gómez Deraves Á, Gómez Marquina K. *Muestreo estadístico para docentes y estudiantes*. 1st ed. Tecana American University; 2019. <https://tauniversity.org/libros/muestreo-estadistico-para-docentes-y-estudiantes>
-14. Belío Miranda J. *Métodos Bootstrap y sus aplicaciones* [Trabajo Fin de Grado]. Universidad de Zaragoza; 2020. <https://zaguan.unizar.es/record/98153>
-15. Tsai TI, Li DC. Utilize bootstrap in small data set learning for pilot run modeling of manufacturing systems. *Expert Systems with Applications*. 2008;35(3):1293-300.
-16. Bolón-Canedo V, Sánchez-Maroño N, Alonso-Betanzos A. *Feature Selection for High-Dimensional Data*. Artificial Intelligence: Foundations, Theory, and Algorithms. Cham: Springer International Publishing; 2015.
-17. Bommert A, Welchowski T, Schmid M, Rahnenführer J. Benchmark of filter methods for feature selection in high-dimensional gene expression survival data. *Briefings in Bioinformatics*. 2022;23(1):bbab354.
-18. Peng H, Long F, Ding C. Feature selection based on mutual information: criteria of max-dependency, max-relevance, and min-redundancy. *IEEE Transactions on Pattern Analysis and Machine Intelligence*. 2005;27(8):1226-38.
-19. Méndez López ÁJ. *Selección de características en entornos de dimensionalidad masiva y muestra reducida: aplicación al estudio de metilación del ADN en la enfermedad de Alzheimer* [Tesis doctoral]. Universidad Autónoma de Madrid; 2024. <https://hdl.handle.net/10486/715205>
-20. EL-Manzalawy Y, Hsieh TY, Shivakumar M, Kim D, Honavar V. Min-redundancy and max-relevance multi-view feature selection for predicting ovarian cancer survival using multi-omics data. *BMC Medical Genomics*. 2018;11(S3):71.
-21. Fleuret F. Fast binary feature selection with conditional mutual information. *Journal of Machine Learning Research*. 2004;5:1531-55.
-22. Dalal H, Dahlgren M, Gladchuk S, Brueffer C, Gruvberger-Saal SK, Saal LH. Clinical associations of ESR2 (estrogen receptor beta) expression across thousands of primary breast tumors. *Scientific Reports*. 2022;12(1):4696.
-23. Hastie T, Tibshirani R, Friedman J. *The elements of statistical learning: data mining, inference, and prediction*. 2nd ed. Springer Series in Statistics. New York: Springer; 2009.
-24. Hanley JA, McNeil BJ. The meaning and use of the area under a receiver operating characteristic (ROC) curve. *Radiology*. 1982;143(1):29-36.
-25. Dong X, Yang Y, Xu G, Tian Z, Yang Q, Gong Y, et al. The initial expression alterations occurring to transcription factors during the formation of breast cancer: evidence from bioinformatics. *Cancer Medicine*. 2022;11(5):1371-95.
-26. Binato R, Corrêa S, Panis C, Ferreira G, Petrone I, da Costa IR, et al. NRIP1 is activated by C-JUN/C-FOS and activates the expression of PGR, ESR1 and CCND1 in luminal A breast cancer. *Scientific Reports*. 2021;11(1):21159.
-
 ## Contacto
 
 cordaz@ucm.es — Facultad de Estudios Estadísticos, UCM.
+pcontro@ucm.es - Facultad de Estudios Estadísticos, UCM.
+aida.calvino@ucm.es - Facultad de Estudios Estadísticos, UCM.
+sipineda@ucm.es - Facultad de Estudios Estadísticos, UCM.
