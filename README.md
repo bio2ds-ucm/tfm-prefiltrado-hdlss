@@ -80,6 +80,7 @@ Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
 
 ## 📑 Citación
 
+```bibtex
 @software{ordaz2026code,
   author    = {Ordaz, Cristina},
   title     = {Code for: Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad},
@@ -88,6 +89,7 @@ Resumen de lo observado en el estudio (ver póster en `doc/` para detalle):
   doi       = {[Zenodo DOI]},
   url       = {https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss}
 }
+```
 
 See [`CITATION.cff`](CITATION.cff).
 
