@@ -1,5 +1,8 @@
 # Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/status-in%20preparation-orange.svg)
+
 Trabajo Fin de Máster — Máster en Bioestadística, Facultad de Estudios Estadísticos, Universidad Complutense de Madrid.
 
 **Autoras:** Cristina Ordaz 
