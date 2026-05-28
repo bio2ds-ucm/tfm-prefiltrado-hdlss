@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Si utilizas este software, por favor cítalo como se indica a continuación."
+title: "Code for: Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad"
+abstract: "Código y figuras del Trabajo Fin de Máster (Máster en Bioestadística, UCM) sobre técnicas de prefiltrado de variables (p-valor, MRMR, CMIM) y aumento de datos (SMOTE, Bootstrap, Ruido) aplicadas a datos transcriptómicos de mama (cohorte SCAN-B) en un escenario de alta dimensionalidad y muestra reducida (HDLSS)."
+type: software
+authors:
+  - family-names: "Ordaz"
+    given-names: "Cristina"
+  - family-names: "Contró"
+    given-names: "Pedro"
+license: MIT
+repository-code: "https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss"
+url: "https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss"
+date-released: "2026-05-28"
+keywords:
+  - machine learning
+  - feature selection
+  - high-dimensional data
+  - transcriptomics
+  - breast cancer
+# Cuando publiques la release en Zenodo, descomenta y rellena el DOI:
+# doi: "10.5281/zenodo.XXXXXXX"
