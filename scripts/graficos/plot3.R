@@ -55,7 +55,7 @@ PARES <- list(
 
 cargar_semilla <- function(semilla) {
   path <- file.path(RESULTS_ROOT, paste0("semilla_", semilla),
-                    "elastic_net_results_FUSIONADO.rds")
+                    "elastic_net_results_FINAL.rds")
   df <- readRDS(path)
   df$semilla_split <- semilla
   df
