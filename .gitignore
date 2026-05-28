@@ -1,0 +1,20 @@
+# Historial y sesión de R
+.Rhistory
+.RData
+.Ruserdata
+.Rapp.history
+
+# RStudio
+.Rproj.user/
+*.Rproj
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Datos (no se versionan: descargar desde GEO, ver data/README.md)
+data/*.rds
+data/*.RData
+
+# Resultados generados por los scripts (se regeneran; ver resultados/README.md)
+resultados/**/*.rds
