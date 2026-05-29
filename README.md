@@ -88,7 +88,7 @@ Resumen de lo observado en el estudio:
   title     = {Code for: Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {[Zenodo DOI]},
+  doi       = {10.5281/zenodo.20443008},
   url       = {https://github.com/bio2ds-ucm/tfm-prefiltrado-hdlss}
 }
 ```
