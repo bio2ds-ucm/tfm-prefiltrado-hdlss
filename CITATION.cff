@@ -22,5 +22,5 @@ keywords:
   - high-dimensional data
   - transcriptomics
   - breast cancer
-# Cuando publiques la release en Zenodo, descomenta y rellena el DOI:
-# doi: "10.5281/zenodo.XXXXXXX"
+
+DOI: 10.5281/zenodo.20443008
