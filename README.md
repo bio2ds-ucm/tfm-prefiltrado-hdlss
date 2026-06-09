@@ -1,7 +1,8 @@
 # Estudio de técnicas de pre-filtrado en modelos de machine learning para manejar datos de alta-dimensionalidad
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20443008.svg)](https://doi.org/10.5281/zenodo.20443008)
+
+[![DOI](https://zenodo.org/badge/1229964163.svg)](https://doi.org/10.5281/zenodo.20610889)
 
 Trabajo Fin de Máster — Máster en Bioestadística  
 Facultad de Estudios Estadísticos · Universidad Complutense de Madrid
